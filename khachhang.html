@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<title>Khách hàng - ITShop.VN</title>
+</head>
+
+<body>
+	<div class="container">
+		<div id="navbar"></div>
+		
+		<div class="card mt-3">
+			<div class="card-header">Khách hàng</div>
+			<div class="card-body">
+				<p class="card-text">Hướng dẫn sử dụng màn hình <strong>Khách hàng</strong>.</p>
+				<img src="images/khachhang.png" class="img-fluid mx-auto d-block" />
+			</div>
+			<div id="them">
+				<h5>Thêm</h5>
+				Khi nhấn nút Thêm thì các ô dữ liệu Họ và tên, Điện thoại, Địa chỉ sẽ sáng lên và xóa trắng để người dùng thêm dữ liệu vào.Đồng thời các nút Thêm , nút Sửa, nút Tìm kiếm, nút Nhập, nút Xuất và nút Xóa sẽ bị mờ đi. Nếu thêm thành công thì hệ thống sẽ thông báo thêm thành công.
+				<img src="images/Them.png" class="img-fluid mx-auto d-block" />
+			</div>
+			<div id="sua">
+				<h5>Sửa</h5>
+				Khi nhấn nút Sửa thì các ô dữ liệu Họ và tên, Điện thoại, Địa chỉ sẽ sáng lên để người dùng sửa dữ liệu đã nhập.Đồng thời các nút Thêm , nút Sửa, nút Tìm kiếm, nút Nhập, nút Xuất và nút Xóa sẽ bị mờ đi.  Nếu Sửa thành công thì hệ thống sẽ thông báo sửa thành công.
+				<img src="images/LuuSua.png" class="img-fluid mx-auto d-block" />
+			</div>
+			<div id="xoa">
+				<h5>Xóa</h5>			
+				Khi nhấn nút Xóa thì hệ thống sẽ thông báo rằng người dùng có chắc sẽ xóa khách hàng ở hàng đã chọn hay không?Nếu người dùng chọn Yes thì hệ thống sẽ xóa đi khách hàng đó và không cập nhật ID đó lại .
+				<img src="images/XoaKH.png" class="img-fluid mx-auto d-block" />
+			</div>
+			<div id="luu">
+				<h5>Lưu</h5>
+				Khi nhấn nút Lưu thì hệ thống sẽ nhận lệnh từ nút Thêm hoặc Lưu.Nếu là Thêm thì sẽ lấy dữ liệu ở các ô dữ liệu mà người dùng nhập vào để thêm vào ở sở dữ liệu.
+				<img src="images/LuuThem.png" class="img-fluid mx-auto d-block" />
+				Ngược lại nếu là Lưu thì hệ thống sẽ lấy dữ liệu ở các ô dữ liệu để thay thế vào dữ liệu đã có ở cơ sở dữ liệu theo ID của khách hàng đó.
+				<img src="images/LuuSua.png" class="img-fluid mx-auto d-block" />
+			</div>
+			<div id="huybo">
+				<h5>Hủy bỏ</h5>
+				Khi nhấn nút Hủy Bỏ thì hệ thống sẽ hủy các thao tác đang được thực hiện.
+				<img src="images/HuyBo.png" class="img-fluid mx-auto d-block" />
+			</div>
+			<div id="timkiem">
+				<h5>Tìm kiếm</h5>
+				Khi nhấn nút Tìm kiếm thì các ô dữ liệu Họ và tên, Điện thoại sẽ sáng lên và xóa trắng để người dùng có thể nhập thông tin về khách hàng muốn tìm.Đồng thời nút Lọc hiện lên. 
+				<img src="images/TimKiem.png" class="img-fluid mx-auto d-block" />
+			</div>
+			<div id="thoat">
+				<h5>Thoát</h5>
+				Khi nhấn nút Thoát thì hệ thống sẽ đóng trang
+				<img src="images/ThoatKH.png" class="img-fluid mx-auto d-block" />
+			</div>
+		</div>
+		
+		<div id="footer"></div>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(document).ready(() => {
+			$('#navbar').load('navbar.html');
+			$('#footer').load('footer.html');
+		});
+	</script>
+</body>
+
+</html>
